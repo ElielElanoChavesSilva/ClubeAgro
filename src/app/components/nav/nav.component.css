@@ -10,3 +10,10 @@
 .first {
     margin-top: 160px;
 }
+
+header {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    border: 1px solid red;
+}
