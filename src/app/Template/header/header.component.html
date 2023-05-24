@@ -1,10 +1,17 @@
 <mat-toolbar class="header">
     <div class="person">
         <div class="img"></div>
-        <p>Bem-vindo, Produtor Rural</p>
+        <p>Bem-vindo, <br><strong>Produtor Rural</strong></p>
     </div>
+    <mat-icon>search</mat-icon>
 </mat-toolbar>
+
 <div class="navigation">
-    <div class="Novidades"></div>
-    <div class="Favoritos"></div>
+    <div class="nav" routerLink="novidades">
+        <p>Novidades</p>
+    </div>
+    <div class="favorite">
+        <mat-icon>favorite</mat-icon>
+        <p>Favoritos</p>
+    </div>
 </div>

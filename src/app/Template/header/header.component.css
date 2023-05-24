@@ -1,12 +1,60 @@
 .header {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
     background: rgb(41,154,57);
     background: linear-gradient(90deg, rgba(41,154,57,1) 0%, rgba(51,112,67,1) 98%);
 }
 
-.person {
+.header .person {
     display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header mat-icon {
+    color: white;
+}
+
+.person p {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 15px;
+}
+
+.navigation {
+    position: fixed;
+    z-index: 999;
+    top:100px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    height: 40px !important;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+}
+
+.navigation .favorite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    height: auto;
+    text-align: center;
+}
+
+.navigation .nav {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img {
@@ -14,5 +62,15 @@
     height: 40px;
     background-color: white;
     border-radius: 100%;
-
 }
+
+.nav:focus {
+    color: rgb(41,154,57);
+    padding-top: 5px;
+    border-bottom: 5px solid rgb(41,154,57)!important;
+}
+
+.navigation .favorite :focus {
+    color: rgb(41,154,57);
+    padding-top: 5px;
+    border-bottom: 5px solid rgb(41,154,57)!important;}
