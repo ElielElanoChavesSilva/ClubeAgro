@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 html, body { height: 100%; }
+
 body { 
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: rgb(247, 246, 246);
+    background-color: rgba(247, 246, 246, 0.966);
 }
 

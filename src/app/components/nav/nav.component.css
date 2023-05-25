@@ -11,9 +11,37 @@
     margin-top: 160px;
 }
 
-header {
+.poster {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 35px;
     width: 100%;
-    border: 1px solid red;
+    gap: 10px;
+    box-shadow: 0px 0.1px black;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.poster .perfil > p {
+    font-size: 10px !important;
+    color: rgb(107, 107, 107);
+}
+
+p {
+    font-size: 14px !important;
+    color: rgb(107, 107, 107);
+}
+
+.poster  strong {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.623) !important;
+}
+
+mat-icon {
+    color: rgb(107, 107, 107);
 }
