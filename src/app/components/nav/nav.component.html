@@ -19,8 +19,8 @@
         <img src="./../../../assets/img/trator.jpg" alt="">
     </div>
 
-    <div class="reaction">
-        <mat-icon>thumb_up_alt</mat-icon>
+    <div class="reaction" (click)="curtir()">
+        <mat-icon>thumb_up_border</mat-icon>{{ curtidas }}
     </div>
 </mat-card>
 
@@ -46,7 +46,7 @@
     </div>
 
     <div class="reaction" (click)="curtir()">
-        <mat-icon>thumb_up</mat-icon>{{ curtidas }}
+        <mat-icon>thumb_up_border</mat-icon>{{ curtidas }}
     </div>
 </mat-card>
 
@@ -71,7 +71,7 @@
         <img src="./../../../assets/img/trator.jpg" alt="">
     </div>
 
-    <div class="reaction">
-        <mat-icon>thumb_ub</mat-icon>
+    <div class="reaction" (click)="curtir()">
+        <mat-icon>thumb_up</mat-icon>{{ curtidas }}
     </div>
 </mat-card>
