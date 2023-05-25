@@ -19,8 +19,14 @@
         <img src="./../../../assets/img/trator.jpg" alt="">
     </div>
 
-    <div class="reaction" (click)="curtir()">
-        <mat-icon>thumb_up_border</mat-icon>{{ curtidas }}
+    <div class="reaction">
+        <div class="event">
+            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
+            <p>{{ curtidas }}</p>
+            <mat-icon>comment</mat-icon>
+            <mat-icon>share</mat-icon>
+        </div>
+        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
     </div>
 </mat-card>
 
@@ -34,19 +40,19 @@
     </div>
 
     <div class="content">
-        <h5>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h5>
-        <p>Vai dar o que falar! <br><br>
-            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
-            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
-            Acesse já e leve a informação com você
-        </p>
-        <a href="mailto:www.agfee.com.br"></a>
-        <h6>Ver menos</h6>
-        <img src="./../../../assets/img/trator.jpg" alt="">
+        <h5>Rede UMA protagoniza eventos inéditos durante a Agrishow</h5>
+        <p>Agenda comtemplou diversos encontros ao longo da semana. No dia 3 de maio, a Rede Uma - União das Mulheres do Agro debateu a secessão familiar e a transformação do agro ás 16h no estande da John Deere.</p>
+        <img src="./../../../assets/img/UMA.jpg" alt="">
     </div>
 
-    <div class="reaction" (click)="curtir()">
-        <mat-icon>thumb_up_border</mat-icon>{{ curtidas }}
+    <div class="reaction">
+        <div class="event">
+            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
+            <p>{{ curtidas }}</p>
+            <mat-icon>comment</mat-icon>
+            <mat-icon>share</mat-icon>
+        </div>
+        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
     </div>
 </mat-card>
 
@@ -60,18 +66,20 @@
     </div>
 
     <div class="content">
-        <h5>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h5>
-        <p>Vai dar o que falar! <br><br>
-            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
-            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
-            Acesse já e leve a informação com você
-        </p>
+        <h5>Mulheres do agro protagonizam eventos inéditos durante a Agrishow</h5>
+        <p>Agenda contempla diversos encontros ao longo da semana. No dia 3 de maio, a Rede UMA - União das Mulheres do Agro promete grande surpresa às 16h no estande da John Deere.</p>
         <a href="mailto:www.agfee.com.br"></a>
         <h6>Ver menos</h6>
-        <img src="./../../../assets/img/trator.jpg" alt="">
+        <img src="./../../../assets/img/mulheresAgro.jpg" alt="">
     </div>
 
-    <div class="reaction" (click)="curtir()">
-        <mat-icon>thumb_up</mat-icon>{{ curtidas }}
+    <div class="reaction">
+        <div class="event">
+            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
+            <p>{{ curtidas }}</p>
+            <mat-icon>comment</mat-icon>
+            <mat-icon>share</mat-icon>
+        </div>
+        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
     </div>
 </mat-card>
