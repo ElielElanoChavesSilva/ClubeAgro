@@ -1,14 +1,28 @@
 .container {
-    height: 500px;
+    display: grid;
+    height: auto;
     background-color: white;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 20px;
-    display: grid;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
 }
+
+.container > h6 {
+    color: rgb(107, 107, 107);
+}
+
+.container .content img {
+    width: 100%;
+    border-radius: 5px;
+} 
 
 .first {
     margin-top: 160px;
+}
+
+.end {
+    top: 4px;
+    bottom: 90px;
 }
 
 .poster {
@@ -21,7 +35,7 @@
     box-shadow: 0px 0.1px black;
 }
 
-.perfil {
+.poster .perfil {
     display: flex;
     align-items: center;
     gap: 7px
@@ -35,6 +49,7 @@
 p {
     font-size: 14px !important;
     color: rgb(107, 107, 107);
+    top: 0;
 }
 
 .poster  strong {
@@ -44,4 +59,8 @@ p {
 
 mat-icon {
     color: rgb(107, 107, 107);
+}
+.reaction {
+    margin-top: 4px;
+    display: flex;
 }

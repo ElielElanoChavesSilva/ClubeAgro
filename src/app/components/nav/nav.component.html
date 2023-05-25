@@ -1,20 +1,30 @@
-<mat-card class="container first mat-elevation-z3">
-    <div class="poster">
+<mat-card class="container first" >
+    <div class="poster" mat-elevation="8">
         <div class="perfil">
             <mat-icon>person</mat-icon>
             <p><strong>Clube Agro Brasil</strong><br>há 50min</p>
         </div>
         <mat-icon>more_horiz</mat-icon>
     </div>
-    <h4>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h4>
-    <p>Vai dar o que falar!</p>
-    <p>Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.</p>
-    <p>Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.</p>
-    <p>Acesse já e leve a informação com você</p>
-    <a href="mailto:www.agfee.com.br"></a>
-    <h6>Ver menos</h6>
+
+    <div class="content">
+        <h5>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h5>
+        <p>Vai dar o que falar! <br><br>
+            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
+            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
+            Acesse já e leve a informação com você
+        </p>
+        <a href="mailto:www.agfee.com.br"></a>
+        <h6>Ver menos</h6>
+        <img src="./../../../assets/img/trator.jpg" alt="">
+    </div>
+
+    <div class="reaction">
+        <mat-icon>thumb_up_alt</mat-icon>
+    </div>
 </mat-card>
-<mat-card class="container mat-elevation-z3">
+
+<mat-card class="container">
     <div class="poster">
         <div class="perfil">
             <mat-icon>person</mat-icon>
@@ -22,13 +32,46 @@
         </div>
         <mat-icon>more_horiz</mat-icon>
     </div>
+
+    <div class="content">
+        <h5>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h5>
+        <p>Vai dar o que falar! <br><br>
+            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
+            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
+            Acesse já e leve a informação com você
+        </p>
+        <a href="mailto:www.agfee.com.br"></a>
+        <h6>Ver menos</h6>
+        <img src="./../../../assets/img/trator.jpg" alt="">
+    </div>
+
+    <div class="reaction" (click)="curtir()">
+        <mat-icon>thumb_up</mat-icon>{{ curtidas }}
+    </div>
 </mat-card>
-<mat-card class="container mat-elevation-z3">
+
+<mat-card class="container end">
     <div class="poster">
         <div class="perfil">
             <mat-icon>person</mat-icon>
             <p><strong>Brevant sementes</strong><br>1 dia</p>
         </div>
         <mat-icon>more_horiz</mat-icon>
+    </div>
+
+    <div class="content">
+        <h5>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h5>
+        <p>Vai dar o que falar! <br><br>
+            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
+            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
+            Acesse já e leve a informação com você
+        </p>
+        <a href="mailto:www.agfee.com.br"></a>
+        <h6>Ver menos</h6>
+        <img src="./../../../assets/img/trator.jpg" alt="">
+    </div>
+
+    <div class="reaction">
+        <mat-icon>thumb_ub</mat-icon>
     </div>
 </mat-card>

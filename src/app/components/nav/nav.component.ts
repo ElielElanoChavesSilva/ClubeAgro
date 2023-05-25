@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+  curtidas: number = 800;
+  verif: boolean = true
+  
+  curtir(): void {
+    this.verif = !this.verif
 
+    if (this.verif) {
+      this.curtidas++
+    } else {
+      this.curtidas--
+    }
+  }
 }
