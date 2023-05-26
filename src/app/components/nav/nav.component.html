@@ -1,75 +1,18 @@
-<mat-card class="container first" >
+<mat-card class="container" *ngFor="let card of cards" >
     <div class="poster" mat-elevation="8">
-        <div class="perfil">
+        <div class="person">
             <mat-icon>person</mat-icon>
-            <p><strong>Clube Agro Brasil</strong><br>há 50min</p>
+            <p><strong>{{ card.Nome }}</strong><br>há 50min</p>
         </div>
         <mat-icon>more_horiz</mat-icon>
     </div>
 
     <div class="content">
-        <h4>ClubeON: o canal de notícias AGFeed e Clube Agro Brasil</h4>
-        <p>Vai dar o que falar! <br><br>
-            Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil.<br><br>
-            Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais.<br><br>
-            Acesse já e leve a informação com você
-        </p>
+        <h4>{{ card.Titulo }}</h4>
+        <p>{{ card.Texto }}</p>
         <a href="mailto:www.agfee.com.br"></a>
         <h6>Ver menos</h6>
-        <img src="./../../../assets/img/trator.jpg" alt="">
-    </div>
-
-    <div class="reaction">
-        <div class="event">
-            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
-            <p>{{ curtidas }}</p>
-            <mat-icon>comment</mat-icon>
-            <mat-icon>share</mat-icon>
-        </div>
-        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
-    </div>
-</mat-card>
-
-<mat-card class="container">
-    <div class="poster">
-        <div class="perfil">
-            <mat-icon>person</mat-icon>
-            <p><strong>Rede UMA</strong><br>1 sem</p>
-        </div>
-        <mat-icon>more_horiz</mat-icon>
-    </div>
-
-    <div class="content">
-        <h4>Rede UMA protagoniza eventos inéditos durante a Agrishow</h4>
-        <p>Agenda comtemplou diversos encontros ao longo da semana. No dia 3 de maio, a Rede Uma - União das Mulheres do Agro debateu a secessão familiar e a transformação do agro ás 16h no estande da John Deere.</p>
-        <img src="./../../../assets/img/UMA.jpg" alt="">
-    </div>
-
-    <div class="reaction">
-        <div class="event">
-            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
-            <p>{{ curtidas }}</p>
-            <mat-icon>comment</mat-icon>
-            <mat-icon>share</mat-icon>
-        </div>
-        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
-    </div>
-</mat-card>
-
-<mat-card class="container end">
-    <div class="poster">
-        <div class="perfil">
-            <mat-icon>person</mat-icon>
-            <p><strong>Brevant sementes</strong><br>1 dia</p>
-        </div>
-        <mat-icon>more_horiz</mat-icon>
-    </div>
-
-    <div class="content">
-        <h4>Mulheres do agro protagonizam eventos inéditos durante a Agrishow</h4>
-        <p>Agenda contempla diversos encontros ao longo da semana. No dia 3 de maio, a Rede UMA - União das Mulheres do Agro promete grande surpresa às 16h no estande da John Deere.</p>
-        <a href="mailto:www.agfee.com.br"></a>
-        <img src="./../../../assets/img/mulheresAgro.jpg" alt="">
+        <img [src]="card.Imagem" alt="">
     </div>
 
     <div class="reaction">

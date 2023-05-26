@@ -26,13 +26,13 @@
     border-bottom: 0.1px solid rgb(230, 230, 230);
 }
 
-.poster .perfil {
+.poster .person {
     display: flex;
     align-items: center;
     gap: 7px
 }
 
-.poster .perfil > p {
+.poster .person > p {
     font-size: 10px !important;
     color: rgb(107, 107, 107);
 }
@@ -77,13 +77,5 @@ mat-icon {
     color:  rgb(41,154,57) !important;
     transform: scale(1.1);
     transition: calc(0.5s);
-}
+} 
 
-.first {
-    margin-top: 160px;
-}
-
-.end {
-    margin-top: 120px;
-    bottom: 100px;
-}

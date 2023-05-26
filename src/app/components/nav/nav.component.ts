@@ -1,3 +1,4 @@
+import { CARDS } from './../../cards';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,11 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+
   curtidas: number = 799;
   verif: boolean = false;
   teste: boolean = false;
   iconName: string = 'bookmark_border' 
 
+  cards = CARDS;
+  
   curtir(): void {
     this.verif = !this.verif
     if (this.verif) {
@@ -22,6 +26,7 @@ export class NavComponent {
 
   toggleIcon() {
     this.teste = !this.teste
+    
     if(this.iconName === 'bookmark_border') {
       this.iconName = 'bookmark';
     } else {

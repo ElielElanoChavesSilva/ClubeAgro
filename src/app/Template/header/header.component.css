@@ -1,8 +1,8 @@
 .header {
     position: fixed;
     top: 0;
-    z-index: 1000;
     height: 100px;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     background: rgb(41,154,57);
@@ -33,7 +33,7 @@
 }
 
 .navigation {
-    position: fixed;
+    position: sticky;
     z-index: 999;
     top: 100px;
     height: 20px;
@@ -71,6 +71,10 @@
     color: rgb(107, 107, 107);
 }
 
+.favorite mat-icon {
+    color:  rgb(107, 107, 107);
+}
+
 .nav:hover {
     color: rgb(41,154,57);
     padding-top: 4px;
@@ -81,8 +85,4 @@
     color: rgb(41,154,57);
     padding-top: 4px;
     border-bottom: 4px solid rgb(41,154,57)!important;
-}
-
-.favorite mat-icon {
-    background-color: transparent;
 }
