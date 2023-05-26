@@ -8,26 +8,24 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
-  curtidas: number = 799;
-  verif: boolean = false;
-  teste: boolean = false;
   iconName: string = 'bookmark_border' 
 
   cards = CARDS;
   
-  curtir(): void {
-    this.verif = !this.verif
-    if (this.verif) {
-      this.curtidas++
+  curtir(card: any): void {
+    card.Curtida = !card.Curtida;
+
+    if(card.Curtida) {
+       card.qtdCurtida++
     } else {
-      this.curtidas--
+      card.qtdCurtida--
     }
   }
 
-  toggleIcon() {
-    this.teste = !this.teste
+  toggleIcon(card: any) {
+    card.favoritos = !card.favoritos
     
-    if(this.iconName === 'bookmark_border') {
+    if(this.iconName === 'bookmark_border' && card.favoritos) {
       this.iconName = 'bookmark';
     } else {
       this.iconName = 'bookmark_border'

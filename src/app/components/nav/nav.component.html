@@ -19,12 +19,12 @@
     
         <div class="reaction">
             <div class="event">
-                <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
-                <p>{{ curtidas }}</p>
+                <mat-icon [class.thumb]="card.Curtida" (click)="curtir(card)">thumb_up</mat-icon>
+                <p>{{ card.qtdCurtida }}</p>
                 <mat-icon>comment</mat-icon>
                 <mat-icon>share</mat-icon>
             </div>
-            <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
+            <mat-icon [class.bookmark]="card.favoritos" (click)="toggleIcon(card)">{{ iconName }}</mat-icon>
         </div>
     </mat-card>
 </div>
