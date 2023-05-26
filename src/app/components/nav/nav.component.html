@@ -1,27 +1,30 @@
-<mat-card class="container" *ngFor="let card of cards" >
-    <div class="poster" mat-elevation="8">
-        <div class="person">
-            <mat-icon>person</mat-icon>
-            <p><strong>{{ card.Nome }}</strong><br>há 50min</p>
-        </div>
-        <mat-icon>more_horiz</mat-icon>
-    </div>
+<div class="cards">
 
-    <div class="content">
-        <h4>{{ card.Titulo }}</h4>
-        <p>{{ card.Texto }}</p>
-        <a href="mailto:www.agfee.com.br"></a>
-        <h6>Ver menos</h6>
-        <img [src]="card.Imagem" alt="">
-    </div>
-
-    <div class="reaction">
-        <div class="event">
-            <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
-            <p>{{ curtidas }}</p>
-            <mat-icon>comment</mat-icon>
-            <mat-icon>share</mat-icon>
+    <mat-card class="container" *ngFor="let card of cards" >
+            <div class="poster" mat-elevation="8">
+            <div class="person">
+                <mat-icon>person</mat-icon>
+                <p><strong>{{ card.Nome }}</strong><br>há 50min</p>
+            </div>
+            <mat-icon>more_horiz</mat-icon>
         </div>
-        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
-    </div>
-</mat-card>
+    
+        <div class="content">
+            <h4>{{ card.Titulo }}</h4>
+            <p>{{ card.Texto }}</p>
+            <a href="mailto:www.agfee.com.br"></a>
+            <h6>Ver menos</h6>
+            <img [src]="card.Imagem" alt="">
+        </div>
+    
+        <div class="reaction">
+            <div class="event">
+                <mat-icon [class.thumb]="verif" (click)="curtir()">thumb_up</mat-icon>
+                <p>{{ curtidas }}</p>
+                <mat-icon>comment</mat-icon>
+                <mat-icon>share</mat-icon>
+            </div>
+            <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
+        </div>
+    </mat-card>
+</div>

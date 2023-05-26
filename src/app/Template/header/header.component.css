@@ -33,7 +33,7 @@
 }
 
 .navigation {
-    position: sticky;
+    position: fixed;
     z-index: 999;
     top: 100px;
     height: 20px;
