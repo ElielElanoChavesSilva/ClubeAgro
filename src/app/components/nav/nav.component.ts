@@ -9,6 +9,7 @@ export class NavComponent {
   curtidas: number = 799;
   verif: boolean = false;
   teste: boolean = false;
+  iconName: string = 'bookmark_border' 
 
   curtir(): void {
     this.verif = !this.verif
@@ -19,7 +20,12 @@ export class NavComponent {
     }
   }
 
-  active(): void{
+  toggleIcon() {
     this.teste = !this.teste
+    if(this.iconName === 'bookmark_border') {
+      this.iconName = 'bookmark';
+    } else {
+      this.iconName = 'bookmark_border'
+    }
   }
 }

@@ -26,7 +26,7 @@
             <mat-icon>comment</mat-icon>
             <mat-icon>share</mat-icon>
         </div>
-        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
+        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
     </div>
 </mat-card>
 
@@ -52,7 +52,7 @@
             <mat-icon>comment</mat-icon>
             <mat-icon>share</mat-icon>
         </div>
-        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
+        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
     </div>
 </mat-card>
 
@@ -79,6 +79,6 @@
             <mat-icon>comment</mat-icon>
             <mat-icon>share</mat-icon>
         </div>
-        <mat-icon [class.bookmark]="teste" (click)="active()">bookmark_border</mat-icon>
+        <mat-icon [class.bookmark]="teste" (click)="toggleIcon()">{{ iconName }}</mat-icon>
     </div>
 </mat-card>
