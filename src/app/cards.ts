@@ -7,8 +7,8 @@ export const CARDS =
         Imagem: "./../assets/img/trator.jpg",
         Curtida: false,
         favoritos: false,
-        qtdCurtida: 799
-
+        qtdCurtida: 799,
+        icone:'bookmark_border'
     },
     {
         Nome: 'Rede UMA',
@@ -17,7 +17,8 @@ export const CARDS =
         Imagem: "./../assets/img/UMA.jpg",
         Curtida: false,
         favoritos: false,
-        qtdCurtida: 799
+        qtdCurtida: 799,
+        icone:'bookmark_border'
     },
     {
         Nome: 'Brevant sementes',
@@ -26,6 +27,7 @@ export const CARDS =
         Imagem: "./../assets/img/mulheresAgro.jpg",
         Curtida: false,
         favoritos: false,
-        qtdCurtida: 799
+        qtdCurtida: 799,
+        icone:'bookmark_border'
     }
 ]

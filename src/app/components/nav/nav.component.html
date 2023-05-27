@@ -24,7 +24,7 @@
                 <mat-icon>comment</mat-icon>
                 <mat-icon>share</mat-icon>
             </div>
-            <mat-icon [class.bookmark]="card.favoritos" (click)="toggleIcon(card)">{{ iconName }}</mat-icon>
+            <mat-icon [class.bookmark]="card.favoritos" (click)="toggleIcon(card)">{{ card.icone }}</mat-icon>
         </div>
     </mat-card>
 </div>
