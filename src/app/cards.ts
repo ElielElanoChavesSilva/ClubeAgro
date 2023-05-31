@@ -6,9 +6,9 @@ export const CARDS =
         Texto: 'Vai dar o que falar! Agora, para se informar sobre o agronegócio e tudo o que o cerca, você com o ClubeOn, o canel de notícicas AGFeed e Clube Agro Brasil. Toda semana, acompanhe matérias e reportagens sobre economia, ESG, negócios e muito mais. Acesse já e leve a informação com você.',
         Imagem: "./../assets/img/trator.jpg",
         Curtida: false,
-        favoritos: false,
-        qtdCurtida: 799,
-        icone:'bookmark_border'
+        Favoritos: false,
+        Qtdcurtida: 799,
+        Icone:'bookmark_border'
     },
     {
         Nome: 'Rede UMA',
@@ -16,9 +16,9 @@ export const CARDS =
         Texto: 'Agenda comtemplou diversos encontros ao longo da semana. No dia 3 de maio, a Rede Uma - União das Mulheres do Agro debateu a secessão familiar e a transformação do agro ás 16h no estande da John Deere.',
         Imagem: "./../assets/img/UMA.jpg",
         Curtida: false,
-        favoritos: false,
-        qtdCurtida: 799,
-        icone:'bookmark_border'
+        Favoritos: false,
+        Qtdcurtida: 799,
+        Icone:'bookmark_border'
     },
     {
         Nome: 'Brevant sementes',
@@ -26,8 +26,8 @@ export const CARDS =
         Texto: 'Agenda contempla diversos encontros ao longo da semana. No dia 3 de maio, a Rede UMA - União das Mulheres do Agro promete grande surpresa às 16h no estande da John Deere.',
         Imagem: "./../assets/img/mulheresAgro.jpg",
         Curtida: false,
-        favoritos: false,
-        qtdCurtida: 799,
-        icone:'bookmark_border'
+        Favoritos: false,
+        Qtdcurtida: 799,
+        Icone:'bookmark_border'
     }
 ]

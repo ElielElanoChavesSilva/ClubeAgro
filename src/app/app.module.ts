@@ -6,22 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Componentes
-import { HeaderComponent } from './Template/header/header.component';
-import { FooterComponent } from './Template/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 //Material
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatCardModule } from '@angular/material/card'
 import { MatIconModule } from '@angular/material/icon'
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { CardsComponent } from './components/cards/cards.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    NavComponent,
     FooterComponent,
-    NavComponent
+    CardsComponent
   ],
   imports: [
     BrowserModule,

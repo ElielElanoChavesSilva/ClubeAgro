@@ -1,0 +1,27 @@
+<mat-card class="container" *ngFor="let card of cards">
+    <div class="poster">
+        <div class="person">
+            <mat-icon>person</mat-icon>
+            <p><strong>{{ card.Nome }}</strong><br>há 50min</p>
+        </div>
+        <mat-icon>more_horiz</mat-icon>
+    </div>
+
+    <div class="content">
+        <h4>{{ card.Titulo }}</h4>
+        <p>{{ card.Texto }}</p>
+        <a href="mailto:www.agfee.com.br"></a>
+        <h6>Ver menos</h6>
+        <img [src]="card.Imagem" alt="">
+    </div>
+
+    <div class="reaction">
+        <div class="event">
+            <mat-icon [class.thumb]="card.Curtida" (click)="curtir(card)">thumb_up</mat-icon>
+            <p>{{ card.Qtdcurtida }}</p>
+            <mat-icon>comment</mat-icon>
+            <mat-icon>share</mat-icon>
+        </div>
+        <mat-icon [class.bookmark]="card.Favoritos" (click)="toggleIcon(card)">{{ card.Icone }}</mat-icon>
+    </div>
+</mat-card>
